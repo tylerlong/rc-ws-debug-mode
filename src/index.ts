@@ -1,5 +1,6 @@
 import RingCentral from '@rc-ex/core';
 import WSExtension from '@rc-ex/ws';
+import DebugExtension from '@rc-ex/debug';
 
 const rc = new RingCentral({
   server: process.env.RINGCENTRAL_SERVER_URL,
@@ -11,6 +12,8 @@ const main = async () => {
   await rc.authorize({
     jwt: process.env.RINGCENTRAL_JWT_TOKEN!,
   });
+  const debugExt = new DebugExtension();
+  await rc.installExtension(debugExt);
   const wsExt = new WSExtension({
     debugMode: true,
   });

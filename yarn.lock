@@ -125,6 +125,11 @@
     axios "^1.5.1"
     qs "^6.11.2"
 
+"@rc-ex/debug@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@rc-ex/debug/-/debug-1.1.4.tgz#57cda9a0c499e1caae3c746d8ca7199c417670ed"
+  integrity sha512-mxrsTCrNukbFRsAgmZxToZjcDdelAoZe2yG2kHupY8HAJFuP2AoPrjoel6+Y/3xJ38VloyOIzKxQE79RR+LvFg==
+
 "@rc-ex/ws@^1.1.4":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@rc-ex/ws/-/ws-1.1.4.tgz#6c013ecaa50b6ee88bcf922caf9a66c8ea18ea52"
