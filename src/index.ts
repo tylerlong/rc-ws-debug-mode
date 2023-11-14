@@ -18,5 +18,10 @@ const main = async () => {
   await wsExt.subscribe(['/restapi/v1.0/account/~/presence?detailedTelephonyState=true&sipData=true'], (event) => {
     // do nothing, because we have debugMode to print all events
   });
+
+  // make sure that oauth token is refreshed before it expires
+  setInterval(async () => {
+    await rc.refresh();
+  }, 3000000); // 50 minutes
 };
 main();
